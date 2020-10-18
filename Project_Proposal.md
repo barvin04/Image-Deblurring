@@ -4,16 +4,16 @@
 ## Project Title:: Single Image Motion Deblurring Using Transparency
 Paper Link:: <http://jiaya.me/all_final_papers/motion_deblur_cvpr07.pdf> 
 
-## GtiHub repo link:: 
+## GtiHub repo link
 <https://github.com/Digital-Image-Processing-IIITH/project-proximacentauri> 
 
-## Team Members:: 
+## Team Members
 * Abhinaba Bala **(2020701001)**, abhinaba.bala@research.iiit.ac.in
 * Neel Ashok Mishra **(2020701009)**, neel.mishra@research.iit.ac.in
 * Ritam Basu **(2020701005)**, ritam.basu@research.iiit.ac.in
 * Jigyasu Khandelwal **(2020702013)**, jigyasu.khandelwal@research.iiit.ac.in
 
-## Main Goals of the project::
+## Main Goals of the project
 1. Image blur is caused due to object motion or camera vibration when the shutter is pressed. 
    The relationship between the blur filter and the object boundary transparency has to be understood. 
 2. An algorithm is to be developed to estimate the blur filter from the transparency values given a blurred image. 
@@ -34,7 +34,7 @@ Paper Link:: <http://jiaya.me/all_final_papers/motion_deblur_cvpr07.pdf>
 
 
 ## Expected Results of the project
-1. We look to obtain a general formulation to solve the problem of image blurring using transparency for i. object blur and/or ii. camera blur.
+1. We look to obtain a general formulation to solve the problem of image blurring using transparency for _i._ object blur and/or _ii._ camera blur.
 2. The accurate estimation of transparency values is very crucial to the success of our method. 
 
 ## Project Milestones and Expected Timeline
