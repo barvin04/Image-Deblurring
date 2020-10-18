@@ -1,5 +1,5 @@
 ## Digital Image Processing
-#Project Proposal
+# Project Proposal
 ## Project ID:: 32
 ## Project Title:: Single Image Motion Deblurring Using Transparency
 Paper Link:: <http://jiaya.me/all_final_papers/motion_deblur_cvpr07.pdf> 
@@ -9,7 +9,7 @@ Paper Link:: <http://jiaya.me/all_final_papers/motion_deblur_cvpr07.pdf>
 
 ## Team Members:: 
 * Abhinaba Bala **(2020701001)**, abhinaba.bala@research.iiit.ac.in
-* Neel Ashok Mishra **(2020701009)**, neel.mishra@researcg.iit.ac.in
+* Neel Ashok Mishra **(2020701009)**, neel.mishra@research.iit.ac.in
 * Ritam Basu **(2020701005)**, ritam.basu@research.iiit.ac.in
 * Jigyasu Khandelwal **(2020702013)**, jigyasu.khandelwal@research.iiit.ac.in
 
@@ -38,14 +38,14 @@ Paper Link:: <http://jiaya.me/all_final_papers/motion_deblur_cvpr07.pdf>
 2. The accurate estimation of transparency values is very crucial to the success of our method. 
 
 ## Project Milestones and Expected Timeline
-_Project Proposal Submission_: 18th October
-25th October: Analysis of Paper
-31st October: Set up the starter code and dependencies
-_Mid Evaluation_: 31st October
-7th November: Implement MAP approach to recover the motion blur filter using transparency and solve 2-D object motion blur. 
-14th November: Implement generalized transparency for when the entire image is degraded. 
-19th November: Complete the codebase and prepare presentation.
-_Final Evaluation_: 19th-25th November
+_Project Proposal Submission_: 18th October  
+25th October: Analysis of Paper  
+31st October: Set up the starter code and dependencies  
+_Mid Evaluation_: 31st October  
+7th November: Implement MAP approach to recover the motion blur filter using transparency and solve 2-D object motion blur.   
+14th November: Implement generalized transparency for when the entire image is degraded.  
+19th November: Complete the codebase and prepare presentation.  
+_Final Evaluation_: 19th-25th November  
 
 ## Is there a dataset that we require?
 No
