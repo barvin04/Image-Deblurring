@@ -27,7 +27,7 @@ Paper Link:: <http://jiaya.me/all_final_papers/motion_deblur_cvpr07.pdf>
 3. A shortcoming of this method is that it can't completely solve the probelm because the background may not undergo the same motion as the object, as the filter is defined only on the moving object. 
 4. The relationship between image boundary transparency and the deblur filter is investigated and it is shown that a filter can be estimated from only the transparency values. 
 5. An algorithm is developed to estimate the filter using a Maximum A Prosteriori (MAP) formulation with a suitable prior and likelihood on transparency. 
-6. A formulation of general transparency is investigated and it is shown that the previous formulation is robust for any kind of motino blur. 
+6. A formulation of general transparency is investigated and it is shown that the previous formulation is robust for any kind of motion blur. 
 7. The algorithm is also very efficient since only image patches are used as input. 
 
 ## Algorithms
