@@ -30,8 +30,11 @@ Paper Link:: <http://jiaya.me/all_final_papers/motion_deblur_cvpr07.pdf>
 6. A formulation of general transparency is investigated and it is shown that the previous formulation is robust for any kind of motino blur. 
 7. The algorithm is also very efficient since only image patches are used as input. 
 
-## Algorithm
-
+## Algorithms
+1. Iterative optimization method for our MAP approach to recover the motion blur filter using transparency. 
+* Conjugate gradient optimization and belief propagation to estimate the filter
+2. Deconvolution using Lucy-Richardson method.
+3. Use user-drawn strokes to collect the foreground and background samples for object motion blur.
 
 ## Expected Results of the project
 1. We look to obtain a general formulation to solve the problem of image blurring using transparency for _i._ object blur and/or _ii._ camera blur.
