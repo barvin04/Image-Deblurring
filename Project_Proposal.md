@@ -31,8 +31,8 @@ Paper Link:: <http://jiaya.me/all_final_papers/motion_deblur_cvpr07.pdf>
 7. The algorithm is also very efficient since only image patches are used as input. 
 
 ## Algorithms
-1. Iterative optimization method for our MAP approach to recover the motion blur filter using transparency. 
-* Conjugate gradient optimization and belief propagation to estimate the filter
+1. Iterative optimization method for our MAP approach to recover the motion blur filter using transparency.  
+Employ conjugate gradient optimization and then Belief Propagation to estimate the filter
 2. Deconvolution using Lucy-Richardson method.
 3. Use user-drawn strokes to collect the foreground and background samples for object motion blur.
 
