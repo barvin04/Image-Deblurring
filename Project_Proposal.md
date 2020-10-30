@@ -4,7 +4,7 @@
 ## Project Title:: Single Image Motion Deblurring Using Transparency
 Paper Link:: <http://jiaya.me/all_final_papers/motion_deblur_cvpr07.pdf> 
 
-## GtiHub repo link
+## GitHub repo link
 <https://github.com/Digital-Image-Processing-IIITH/project-proximacentauri> 
 
 ## Team Members
