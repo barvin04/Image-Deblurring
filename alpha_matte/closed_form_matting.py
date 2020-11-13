@@ -88,4 +88,37 @@ def closed_form_matting_with_trimap(image, trimap, trimap_confidence=100.0):
     consts_map = (trimap < 0.1) | (trimap > 0.9)
     return closed_form_matting_with_prior(image, trimap, trimap_confidence * consts_map, consts_map)
 
+def closed_form_matting_with_scribbles(image, scribbles, scribbles_confidence=100.0):
+    """Apply Closed-Form matting to given image using scribbles image."""
+
+    assert image.shape == scribbles.shape, 'scribbles must have exactly same shape as image.'
+    prior = np.sign(np.sum(scribbles - image, axis=2)) / 2 + 0.5
+    consts_map = prior != 0.5
+    return closed_form_matting_with_prior(
+        image,
+        prior,
+        scribbles_confidence * consts_map,
+        consts_map
+    )
+
+
+closed_form_matting = closed_form_matting_with_trimap
+
+def main():
+    image = cv2.imread(testdata/source.png, cv2.IMREAD_COLOR) / 255.0
+
+    scribbles = cv2.imread(testdata/scribbles.png, cv2.IMREAD_COLOR) / 255.0
+    alpha = closed_form_matting_with_scribbles(image, scribbles)
+    trimap = cv2.imread(testdata/trimap.png, cv2.IMREAD_GRAYSCALE) / 255.0
+    alpha = closed_form_matting_with_trimap(image, trimap)
+    logging.error('Either trimap or scribbles must be specified.')
+
+    from solve_foreground_background import solve_foreground_background
+    foreground, _ = solve_foreground_background(image, alpha)
+    output = np.concatenate((foreground, alpha[:, :, np.newaxis]), axis=2)
+    output = alpha
+
+
+    return output
+p=main()
 
