@@ -105,13 +105,13 @@ def closed_form_matting_with_scribbles(image, scribbles, scribbles_confidence=10
 closed_form_matting = closed_form_matting_with_trimap
 
 def main():
-    image = cv2.imread(testdata/source.png, cv2.IMREAD_COLOR) / 255.0
+    image = cv2.imread(output/ball.jpg, cv2.IMREAD_COLOR) / 255.0
 
-    scribbles = cv2.imread(testdata/scribbles.png, cv2.IMREAD_COLOR) / 255.0
+    #scribbles = cv2.imread(output/ball_t.jpg, cv2.IMREAD_COLOR) / 255.0
     alpha = closed_form_matting_with_scribbles(image, scribbles)
-    trimap = cv2.imread(testdata/trimap.png, cv2.IMREAD_GRAYSCALE) / 255.0
+    trimap = cv2.imread(output/ball_t.jpg, cv2.IMREAD_GRAYSCALE) / 255.0
     alpha = closed_form_matting_with_trimap(image, trimap)
-    logging.error('Either trimap or scribbles must be specified.')
+    #logging.error('Either trimap or scribbles must be specified.')
 
     from solve_foreground_background import solve_foreground_background
     foreground, _ = solve_foreground_background(image, alpha)
